@@ -585,10 +585,10 @@ function ghostIllustration(g){
 }
 const ghostPortraitSlots={'Spirit':0,'Banshee':1,'Demon':2,'Revenant':3,'Shade':4,'Yurei':5,'Oni':6,'Yokai':7,'Hantu':8,'Goryo':9};
 function ghostPortraitImage(g){
- const portraits={Spirit:'spirit',Banshee:'banshee',Demon:'demon',Revenant:'revenant',Shade:'shade',Yurei:'yurei',Oni:'oni',Yokai:'yokai',Hantu:'hantu',Goryo:'goryo'};
+ const portraits={Spirit:'spirit',Banshee:'banshee',Demon:'demon',Revenant:'revenant',Shade:'shade',Yurei:'yurei',Oni:'oni',Yokai:'yokai',Hantu:'hantu',Goryo:'goryo',Aswang:'aswang',Dayan:'dayan',Deildegast:'deildegast',Deogen:'deogen',Gallu:'gallu',Jinn:'jinn',Kormos:'kormos',Mare:'mare',Moroi:'moroi',Myling:'myling',Obake:'obake',Obambo:'obambo',Onryo:'onryo',Phantom:'phantom',Poltergeist:'poltergeist',Raiju:'raiju',Thaye:'thaye','The Mimic':'mimic','The Twins':'twins',Wraith:'wraith'};
  const slug=portraits[g.original];
  if(!slug)return '<img class="ghost-art-full" src="'+ghostIllustration(g)+'" alt="Иллюстрация: '+safe(g.title)+'">';
- return '<img class="ghost-art-full" src="./assets/bestiary/'+slug+'.webp?v=hires-1" alt="Иллюстрация: '+safe(g.title)+'">';
+ return '<img class="ghost-art-full" src="./assets/bestiary/'+slug+'.webp?v=all30-20261028" alt="Иллюстрация: '+safe(g.title)+'">';
 }
 
 let journalIndex=0;
