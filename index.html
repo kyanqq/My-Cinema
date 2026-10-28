@@ -579,7 +579,7 @@ function finderMatches(g){
  const effective=g.name==='The Mimic'?[...g.evidence,'Ghost Orb']:g.evidence;
  if(finderMode==='zero')return true;
  if(!positive.every(e=>effective.includes(e)))return false;
- if(finderMode==='normal'&&negative.some(e=>g.evidence.includes(e)&&!(g.name==='The Mimic'&&e==='Ghost Orb')))return false;
+ if(finderMode==='normal'&&negative.some(e=>effective.includes(e)))return false;
  return true;
 }
 function renderFinder(){
