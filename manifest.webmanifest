@@ -1,7 +1,7 @@
 {
-  "name": "MY CINEMA — моя кинотека",
-  "short_name": "MY CINEMA",
-  "start_url": "./",
+  "name": "RAF CINEMA — моя кинотека",
+  "short_name": "RAF CINEMA",
+  "start_url": "./?brand=raf",
   "scope": "./",
   "display": "standalone",
   "background_color": "#0b0b0e",
