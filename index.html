@@ -319,7 +319,7 @@ if(!selected)return;
 const palette=selected.id==='tt3783958'?['rgba(165,91,124,.27)','rgba(74,81,162,.24)']:['rgba(148,100,77,.25)','rgba(71,90,116,.2)'];
 $('modal').style.setProperty('--film-warm',palette[0]);
 $('modal').style.setProperty('--film-cool',palette[1]);
-$('mnum').textContent=(selected.type==='series'?'СЕРИАЛ № ':'ФИЛЬМ № ')+selected.num;
+$('mnum').textContent=selected.type==='series'?'СЕРИАЛ':'ФИЛЬМ';
 $('mtitle').textContent=selected.title;$('mtitle').classList.toggle('long-film-title',selected.title.length>=18);
 $('mmeta').textContent=[selected.original,selected.type==='series'?(selected.year+'–'+selected.yearEnd+' · '+selected.seasons+' сезонов · Сериал'):selected.year,selected.director,'IMDb ★ '+selected.imdb].join(' · ');
 $('mdesc').textContent=selected.description;
